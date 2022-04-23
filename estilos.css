@@ -1,0 +1,92 @@
+.fuente{
+    font-family: 'Amatic SC', cursive;
+}
+
+.fondo{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(118,124,124,0.8743872549019608) 40%, rgba(51,63,65,1) 73%);  
+}
+
+.fondobanner{
+    background-image: url("img/diamantes212.jpg") ;
+    height: 420px;
+    background-attachment: fixed;
+    background-position: top center;
+    
+}
+.fondoti{
+    background-image: url("img/fondo1.jpg");
+    background-size: 100%;
+    border-radius: 6px;
+
+}
+body{
+    border-radius: 6px;
+}
+
+
+a, a:hover {
+    text-decoration: none;
+    color:black;
+}
+.fondo-ff{
+    background-image: url("img/orofondojpg.jpg");
+    background-color: transparent rgba(199, 179, 219, 0.164);
+    border-radius: 15px;
+    background-size: 70%;
+}
+
+
+
+.auxiliar {
+  position: absolute;
+  bottom: 0;
+  top:0;
+  right: 0;
+  height: 100%;
+  width: 30%;
+  opacity: 0;
+  transition: .5s ease;
+  
+  
+ 
+}
+
+.card:hover .auxiliar{
+ opacity: 1;
+}
+
+.piePagina{
+    position:relative;
+    background-image: url("img/foto43.jpg");
+    background-position: top center;
+    filter: grayscale(100%);
+    height: 500px;
+    z-index:1;
+}
+
+.piePagina::after{
+    position:absolute;
+    content:"";
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index:-1;
+
+}
+
+.altura{
+     height: 450px;
+}
+
+.icono{
+
+    font-size: 55px;
+    
+}
+.icono{
+    font-size: 30px;
+}
