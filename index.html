@@ -51,6 +51,14 @@
               </ul>
             </li>
           </ul>
+          <div class="Icon-IMG Show" id="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+            <a class="navbar-brand show" href="#" id="Usuario">Navbar</a>
+          </div>
+          
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
@@ -62,8 +70,36 @@
 
   <main>
 
-    <section class="animate__animated animate__fadeIn">
-      <img src="img/fondo1.jpg" alt="imagen" class="w-100 img-fluid">
+    <section class="animate__animated animate__fadeIn ">
+      <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner sombras">
+          <div class="carousel-item active">
+            <img src="img/fondo1.jpg" alt="imagen" class="w-100 img-fluid">
+            <p class="textimg">   Somos diseñadores de obras maestras’
+              Es testimonio de que diseñaron obras maestras de joyería.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="img/fondobaner3.jpg" alt="imagen" class="w-100 img-fluid">
+            <p class="textimg">Es cierto lo que dicen, no todo lo que tiene brillo es oro. La plata y los Diamantes, también pueden deslumbrar.</p>
+
+          </div>
+          <div class="carousel-item">
+            <img src="img/fondobaner4.jpg" alt="imagen" class="w-100 img-fluid">
+            <p class="textimg">Busques clásicos o tendencias, nuestro catálogo de joyas lo tiene.</p>
+
+          </div>
+          <div class="carousel-item">
+            <img src="img/fondobaner5.jpg" alt="imagen" class="w-100 img-fluid">
+            <p class="textimg">No toda joya es brillante. Algunas son negras como la noche y rojas como la sangre, perfectas para un alma gótica.</p>
+
+          </div>
+          <div class="carousel-item">
+            <img src="img/fondobaner6.jpg" alt="imagen" class="w-100 img-fluid">
+            <p class="textimg">Somos el mapa del tesoro que necesitas, para conseguir todas las joyas, oro y plata que pueda desear tu alma pirata.</p>
+
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="wow container mt-5 animate__animated animate__fadeInUp fondo-ff">
@@ -85,35 +121,32 @@
       </div>
     </div>
 
-    <section class="mt-5 p-3 ">
+    <section  class="mt-5 p-3 ">
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <h5 class="offcanvas-title text-center"id="offcanvasExampleLabel">Registrate</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
-            etc.
-          </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-              data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
+          <form id="formularioregistro">
+            <div class="mb-3">
+              <label class="form-label">correo</label>
+              <input type="text" class="form-control" id="correo">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">contraseña</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+            <button type="submit" class="btn btn-primary" id="botonregistro">enviar</button>
+          </form>
+          
+          
         </div>
       </div>
     </section>
 
     <section class="fondobanner">
     </section>
-
     <section>
       <div class="container mt-5">
         <div class="row">
@@ -195,16 +228,36 @@
     </div>
 
   </footer>
-
-  <script src="."></script>
+  <section>
+    <!-- Modal3 -->
+    <div class="modal fade" id="modalinformativo" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">DIAMON</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p id="informaciongeneral"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/firebase.js" type="module"></script>
+  <script src="js/registro.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/3675f85246.js" crossorigin="anonymous"></script>
-  <script src="wow.min.js"></script>
-  -
+  
+  
   <script>
-    new WOW().init();
+    
   </script>
 </body>
 

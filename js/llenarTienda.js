@@ -1,15 +1,15 @@
-function llenarTienda(){
+export function llenarTienda(){
     let productosBD=[
-        {nombre:"Invicta Pro Diver",precio:245000,foto:"img/reloj332.jpg"},
-        {nombre:"OUPINKE",precio:800000,foto:"img/reloj_022.jpg"},
-        {nombre:"aretes de oro con esmeraldas",precio:330000,foto:"img/esmeralda_03.jpg"},
-        {nombre:"reloj de lujo",precio:1145000,foto:"img/reloj332211.jpg",},
-        {nombre:"esmeraldas",precio:288000,foto:"img/esmeralda_1.jpg"},
-        {nombre:"reloj 2022",precio:6054000,foto:"img/reloj3.jpg",},
-        {nombre:"cadena de oro",precio:145000,foto:"img/joya_5.jpg"},
-        {nombre:"oro 24k",precio:2545000,foto:"img/joya_07.jpg",},
-        {nombre:"colgante de lagrima",precio:207000,foto:"img/esmeralda_1.jpg"},
-        {nombre:"anillos",precio:4770000,foto:"img/anillo3.jpg"},
+        {nombre:"Invicta Pro Diver",precio:245000,foto:"img/reloj332.jpg",descripcion:"Men Quartz Leather Chronograph Watch and Fashion Bracelet Set Analog Watches for Men Luxury Wristwatch Gifts for Dad Boyfriend"},
+        {nombre:"OUPINKE",precio:800000,foto:"img/reloj_022.jpg",descripcion:"Reloj de pulsera para hombre, cronógrafo de cuarzo, acero inoxidable, antioxidante, resistente al agua, perfecto para negocios y uso casual"},
+        {nombre:"aretes de oro con esmeraldas",precio:330000,foto:"img/esmeralda_03.jpg",descripcion:"Parade of Jewels - Pendientes colgantes de oro blanco o amarillo de 14 quilates con piedras natales de 0.315 in"},
+        {nombre:"reloj de lujo",precio:1145000,foto:"img/reloj332211.jpg",descripcion:"BENYAR - Reloj cronógrafo para hombre, reloj multifunción negro, impermeable, deportivo, a la moda, de cuarzo, reloj de muñeca con correa de acero inoxidable"},
+        {nombre:"esmeraldas",precio:288000,foto:"img/esmeralda_1.jpg",descripcion:"Collar con dije Kendra Scott Elisa para mujer, joyería de moda, chapado en oro de 14 quilates"},
+        {nombre:"reloj 2022",precio:6054000,foto:"img/reloj3.jpg",descripcion:"Invicta Subaqua Noma III 14501 - Reloj de acero inoxidable chapado en oro de 18 quilates"},
+        {nombre:"cadena de oro",precio:145000,foto:"img/joya_5.jpg",descripcion:"FEEL STYLE Cadena de eslabones cubanos para hombre, chapado en oro y plata, collar cubano, cadena de diamantes para hombre, 0.512 in, joyería de hip hop"},
+        {nombre:"oro 24k",precio:2545000,foto:"img/joya_07.jpg",descripcion:"The GLD Shop - Collar de cadena cubana Miami de 0.157 in, 18.0 in, 22.0 in, color dorado"},
+        {nombre:"colgante de lagrima",precio:207000,foto:"img/esmeralda_1.jpg",descripcion:"colgantes de plata de ley auténtica o de imitación"},
+        {nombre:"anillos",precio:4770000,foto:"img/anillo3.jpg",descripcion:"Anillo de plata de ley 925 para mujer, con corazón y rubí, brillante con diamante entero, circonita cúbica, piedra roja, anillo de compromiso de boda, anillo de cóctel para mujer"},
 
     ]
 
@@ -46,10 +46,18 @@ function llenarTienda(){
         titulo.classList.add("text-center")
         titulo.textContent=producto.nombre
 
+        let descripcion=document.createElement("p")
+        descripcion.classList.add("text-center")
+        descripcion.classList.add("show2")
+        descripcion.textContent=producto.descripcion
+        
+
         let precio=document.createElement("h3")
         precio.classList.add("text-center")
+        precio.classList.add("colorpre")
         precio.textContent=producto.precio
 
+       
         //creando un boton
         let boton=document.createElement("button")
         boton.setAttribute("type","button")
@@ -59,13 +67,14 @@ function llenarTienda(){
         //orZ denar estructura
         tarjeta.appendChild(foto)
         tarjeta.appendChild(titulo)
+        tarjeta.appendChild(descripcion)
+        
         tarjeta.appendChild(precio)
         tarjeta.appendChild(boton)
+        
     
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
     
     })
 }
-
-//llenarTienda()

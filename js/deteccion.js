@@ -15,7 +15,7 @@ let productosBD=[
 
 
 //Necesito recorrer un arreglo en JS
-function llenarTienda(){
+ function llenarTienda(){
     let productosBD=[
         {nombre:"Invicta Pro Diver",precio:245000,foto:"img/reloj332.jpg"},
         {nombre:"OUPINKE",precio:800000,foto:"img/reloj_022.jpg"},

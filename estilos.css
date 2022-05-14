@@ -23,6 +23,13 @@
 body{
     border-radius: 6px;
 }
+.textimg{
+    text-shadow: 2px 2px 3px  #02e80a;
+    color: rgb(145, 124, 97);
+}
+.show2{
+    display:none ;
+}
 
 
 a, a:hover {
@@ -90,3 +97,125 @@ a, a:hover {
 .icono{
     font-size: 30px;
 }
+.h-100:hover{
+    box-shadow:   5px 4px 5px  3px #408cfe;
+    width: 105%;
+    height: 120%;
+    background: #00ff0da0;
+    color: azure ;
+    
+    
+
+}
+.btn:hover {
+    box-shadow:   3px 2px 5px  3px #fef108a0;
+    
+    background: #bfcd00;
+  
+
+}
+.modal{
+    background: rgba(21, 8, 14, 0.752);
+
+}
+.modal-dialog{
+    /*background: #9cbef09b;*/
+    border:4px solid ;
+    border-color: #3679ed;
+    border-radius:8px;
+  /*  box-shadow: 2px 2px 2px 2px rgba(174, 240, 32, 0.834) ;*/
+}
+.modal-header{
+    background: black;
+    color: #e6e7e9;
+    
+}
+.modal-title{
+    height: 10px;
+}
+.navbar-brand{
+    color: #e6e7e9;
+}
+a{
+    text-decoration: none;
+}
+.offcanvas{
+    background: #0011ffb9;
+    border-radius: 15px;
+    border: 3px solid #3679ed;
+}
+
+.Show{
+    display: none;
+    
+}
+.sombras{
+    border-radius: 15px;
+    box-shadow: 5px 8px 12px rgba(0, 0, 255, 0.962);
+}
+.sombras img{
+    width: 100%;
+    height: 100%;
+
+}
+.sombras p{
+    font-size:3rem ;
+    color: azure;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-20%, -50%);
+
+
+}
+.form-control{
+    border:2px solid #bfcd00;
+    border-radius: 10px;
+    box-shadow:1px 0px 10px  3px  wheat;
+    background: #d2eaf2e5;
+
+
+
+
+}
+#botonregistro{
+    color:rgb(60, 60, 73) ;
+	text-decoration: none;
+	width: 203px;
+	background:#83ff7e;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 2px solid wheat;
+	font-family: 'calibri';
+	font-size: 18px;
+	text-align: center;
+	margin-left: 1px;
+}
+#botonregistro:hover{
+    color:rgb(41, 28, 25) ;
+	text-decoration: none;
+	width: 200px;
+	background:wheat;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid red;
+	font-family: 'calibri';
+	font-size: 18px;
+	text-align: center;
+	margin-left: 1px;
+	box-shadow:2px 0px 10px  5px wheat;
+}
+.colorpre{
+    color: blue;
+}
+.color3{
+    color: #e8c602;
+}
+.color4{
+    color: #02e80a;
+}
+
+
+
